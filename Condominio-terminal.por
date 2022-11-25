@@ -17,7 +17,7 @@ programa
 			escreva("\n3 - Buscar um morador por codigo(índice).")
 			escreva("\n4 - Buscar um morador por nome.")
 			escreva("\n\n5 - Sair")
-			escreva("\n---------------------")
+			escreva("\n---------------------------------------------")
 			escreva("\nDigite uma opção: ")
 			leia(opcao)
 			limpa()
@@ -41,7 +41,7 @@ programa
 
 			senao se(opcao == 2){
 				para (inteiro i = 0; i< qtdCadastrada; i++){
-					escreva(i+": ",nomes[i], "CPF: "+cpf[i]+"\n")
+					escreva(i+": ",nomes[i], " CPF: "+cpf[i],"Nascido em: "+dataNasc[i] +"\n")
 					posicao = i
 				}
 				u.aguarde(900)
@@ -52,7 +52,6 @@ programa
 				leia(pesquisa)
 
 				escreva(nomes[pesquisa] + "\n\n")
-				u.aguarde(900)
 			}
 			
 			senao se(opcao == 4){
@@ -69,7 +68,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1195; 
+ * @POSICAO-CURSOR = 1241; 
+ * @DOBRAMENTO-CODIGO = [49, 56];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
