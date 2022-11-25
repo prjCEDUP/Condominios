@@ -37,14 +37,15 @@ programa
 
 				qtdCadastrada++
 				
+				
 			}
 
 			senao se(opcao == 2)
 			{
 				para (inteiro i=0; i<qtdCadastrada; i++)
 				{
-					escreva(posicao+" ", nomes[i], "CPF: "+cpf[i]+"\n")
-					
+					escreva(i+" ", nomes[i], "CPF: "+cpf[i]+"\n")
+					posicao = i
 				}
 			}
 
@@ -72,7 +73,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 959; 
+ * @POSICAO-CURSOR = 1143; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
