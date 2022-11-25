@@ -6,7 +6,7 @@ programa
 	{
 		cadeia nomes[99999], cpf[99999]
 		inteiro opcao = 0
-		inteiro quantidadeCadastrada = 0, pesquisa = 0
+		inteiro qtdCadastrada = 0, pesquisa = 0
 		caracter nome
 
 		enquanto (opcao != 5) 
@@ -26,23 +26,23 @@ programa
 			se (opcao == 1)
 			{
 				limpa()
-				escreva("Digite um nome da pessoa " + quantidadeCadastrada +": ")
-				leia(nomes[quantidadeCadastrada])
+				escreva("Digite um nome da pessoa " + (qtdCadastrada+1) +": ")
+				leia(nomes[qtdCadastrada])
 				
-				escreva("Digite o CPF " + quantidadeCadastrada +": ")
-				leia(cpf[quantidadeCadastrada])
+				escreva("Digite o CPF " + (qtdCadastrada+1) +": ")
+				leia(cpf[qtdCadastrada])
+				
 				escreva("Condominio cadastrado com sucesso!\n\n")
 				u.aguarde(900)
 				
-				quantidadeCadastrada++
+				qtdCadastrada++
 			}
 
 			senao se(opcao == 2)
 			{
-				para (inteiro i=0; i<quantidadeCadastrada; i++)
+				para (inteiro i=0; i<qtdCadastrada; i++)
 				{
-					escreva(nomes[i]+"\n")
-					u.aguarde(900)
+					escreva(qtdCadastrada+" ", nomes[i], "CPF: "+cpf[i]+"\n")
 				}
 			}
 
@@ -61,7 +61,7 @@ programa
 				leia(nome)
 
 
-				escreva("O codigo é: "+nomes[quantidadeCadastrada] + "\n\n")
+				escreva("O codigo é: "+nomes[qtdCadastrada] + "\n\n")
 			}
 		}
 	}
@@ -71,7 +71,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 116; 
+ * @POSICAO-CURSOR = 1404; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {nome, 10, 11, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
