@@ -4,19 +4,18 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nomes[99999], cpf[99999] 
-		inteiro opcao = 0, posicao = 0
-		inteiro qtdCadastrada = 0, pesquisa = 0
+		cadeia nomes[99999], cpf[99999], dataNasc[9999] 
+		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, posicao = 0
 		caracter nome
 
 		enquanto (opcao != 5) 
 		{
 			escreva("------------- Programa do CEDUP -------------")
-			escreva("\n---------------- 2022 INFO ----------------")
-			escreva("\n1 - Cadastrar condomino")
-			escreva("\n2 - Listar todos condominos")
-			escreva("\n3 - Buscar um condomino por codigo(índice)")
-			escreva("\n4 - Buscar um condomino por nome")
+			escreva("\n----------------- 2022 INFO -----------------")
+			escreva("\n1 - Cadastrar morador")
+			escreva("\n2 - Listar todos moradores")
+			escreva("\n3 - Buscar um morador por codigo(índice)")
+			escreva("\n4 - Buscar um morador por nome")
 			escreva("\n\n5 - Sair")
 			escreva("\n---------------------")
 			escreva("\nDigite uma opção: ")
@@ -29,24 +28,26 @@ programa
 				escreva("Digite um nome da pessoa " + (qtdCadastrada+1) +": ")
 				leia(nomes[qtdCadastrada])
 				
-				escreva("Digite o CPF " + (qtdCadastrada+1) +": ")
+				escreva("Digite o CPF: ")
 				leia(cpf[qtdCadastrada])
+
+				escreva("Digite a data de nascimento no formato xx/xx/xxxx: ")
+				leia(dataNasc[qtdCadastrada])
 				
-				escreva("Condominio cadastrado com sucesso!\n\n")
-				u.aguarde(900)
+				escreva("Morador cadastrado com sucesso!\n\n")
+				u.aguarde(1000)
 
 				qtdCadastrada++
-				
-				
 			}
 
 			senao se(opcao == 2)
 			{
 				para (inteiro i=0; i<qtdCadastrada; i++)
 				{
-					escreva(i+" ", nomes[i], "CPF: "+cpf[i]+"\n")
+					escreva(i+":",nomes[i], "CPF: "+cpf[i]+"\n")
 					posicao = i
 				}
+				u.aguarde(9000)
 			}
 
 			senao se(opcao == 3)
@@ -73,7 +74,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1143; 
+ * @POSICAO-CURSOR = 315; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
