@@ -12,10 +12,10 @@ programa
 		{
 			escreva("------------- Programa do CEDUP -------------")
 			escreva("\n----------------- 2022 INFO -----------------")
-			escreva("\n1 - Cadastrar morador")
-			escreva("\n2 - Listar todos moradores")
-			escreva("\n3 - Buscar um morador por codigo(índice)")
-			escreva("\n4 - Buscar um morador por nome")
+			escreva("\n1 - Cadastrar morador.")
+			escreva("\n2 - Listar todos moradores.")
+			escreva("\n3 - Buscar um morador por codigo(índice).")
+			escreva("\n4 - Buscar um morador por nome.")
 			escreva("\n\n5 - Sair")
 			escreva("\n---------------------")
 			escreva("\nDigite uma opção: ")
@@ -74,7 +74,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 315; 
+ * @POSICAO-CURSOR = 384; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
