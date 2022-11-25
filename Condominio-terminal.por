@@ -1,5 +1,6 @@
 programa
 {
+	inclua biblioteca Teclado --> t
 	inclua biblioteca Util --> u
 	
 	funcao inicio()
@@ -47,7 +48,7 @@ programa
 					escreva(i+":",nomes[i], "CPF: "+cpf[i]+"\n")
 					posicao = i
 				}
-				u.aguarde(9000)
+				u.aguarde(900)				
 			}
 
 			senao se(opcao == 3)
@@ -74,7 +75,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 384; 
+ * @POSICAO-CURSOR = 1268; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
