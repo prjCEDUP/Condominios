@@ -4,8 +4,8 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nomes[99999], cpf[99999]
-		inteiro opcao = 0
+		cadeia nomes[99999], cpf[99999] 
+		inteiro opcao = 0, posicao = 0
 		inteiro qtdCadastrada = 0, pesquisa = 0
 		caracter nome
 
@@ -34,15 +34,17 @@ programa
 				
 				escreva("Condominio cadastrado com sucesso!\n\n")
 				u.aguarde(900)
-				
+
 				qtdCadastrada++
+				
 			}
 
 			senao se(opcao == 2)
 			{
 				para (inteiro i=0; i<qtdCadastrada; i++)
 				{
-					escreva(qtdCadastrada+" ", nomes[i], "CPF: "+cpf[i]+"\n")
+					escreva(posicao+" ", nomes[i], "CPF: "+cpf[i]+"\n")
+					
 				}
 			}
 
@@ -60,8 +62,7 @@ programa
 				escreva("Digite um nome: ")
 				leia(nome)
 
-
-				escreva("O codigo é: "+nomes[qtdCadastrada] + "\n\n")
+				escreva("O codigo é: "+posicao+ "\n\n")
 			}
 		}
 	}
@@ -71,9 +72,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1404; 
+ * @POSICAO-CURSOR = 959; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {nome, 10, 11, 4};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
