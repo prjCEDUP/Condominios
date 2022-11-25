@@ -39,22 +39,22 @@ programa
 				qtdCadastrada++
 			}
 
-			senao se(opcao == 2){
+			se(opcao == 2){
 				para (inteiro i = 0; i< qtdCadastrada; i++){
 					escreva(i+": ",nomes[i], " CPF: "+cpf[i],"Nascido em: "+dataNasc[i] +"\n")
-					posicao = i
+					posicao -= i 
 				}
 				u.aguarde(900)
 			}
 
-			senao se(opcao == 3){
+			se(opcao == 3){
 				escreva("Digite o codigo do morador: ")
 				leia(pesquisa)
 
 				escreva(nomes[pesquisa] + "\n\n")
 			}
 			
-			senao se(opcao == 4){
+			se(opcao == 4){
 				escreva("Digite um nome: ")
 				leia(nome)
 
@@ -68,8 +68,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1241; 
- * @DOBRAMENTO-CODIGO = [49, 56];
+ * @POSICAO-CURSOR = 1283; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
