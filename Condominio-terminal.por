@@ -42,7 +42,7 @@ programa
 			se(opcao == 2){
 				para (inteiro i = 0; i< qtdCadastrada; i++){
 					escreva(i+": ",nomes[i], " CPF: "+cpf[i],"Nascido em: "+dataNasc[i] +"\n")
-					posicao -= i 
+					posicao = i
 				}
 				u.aguarde(900)
 			}
@@ -68,9 +68,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1283; 
+ * @POSICAO-CURSOR = 1272; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {nomes, 7, 9, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
