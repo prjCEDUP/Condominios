@@ -4,10 +4,8 @@ programa
 	inclua biblioteca Util --> u
 	
 	funcao inicio(){
-		cadeia nomes[99999]
+		cadeia nomes[99999], cpf[99999], dataNasc[9999], nome
 		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, posicao = 0
-		inteiro cpf[99999], dataNasc[9999] 
-		caracter nome
 
 		enquanto (opcao != 5){
 			escreva("------------- Programa do CEDUP -------------")
@@ -42,7 +40,7 @@ programa
 			se(opcao == 2){
 				para (inteiro i = 0; i< qtdCadastrada; i++){
 					escreva(i+": ",nomes[i], " CPF: "+cpf[i],"Nascido em: "+dataNasc[i] +"\n")
-					posicao = i
+					posicao += i
 				}
 				u.aguarde(900)
 			}
@@ -58,7 +56,12 @@ programa
 				escreva("Digite um nome: ")
 				leia(nome)
 
-				escreva("O codigo é: "+posicao+ "\n\n")
+				para (inteiro i = 0; i<5; i++){
+					se (nomes[i] == nome){
+					escreva("nome localizado na "+ i)
+					}
+			//encontrou = 1
+				}
 			}
 		}
 	}
@@ -68,7 +71,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1272; 
+ * @POSICAO-CURSOR = 110; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {nomes, 7, 9, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
