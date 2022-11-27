@@ -5,7 +5,7 @@ programa
 	
 	funcao inicio(){
 		cadeia nomes[99999], cpf[99999], dataNasc[99999], nome
-		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, sn
+		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0
 
 		enquanto (opcao != 5){
 			escreva("------------- Programa do CEDUP -------------")
@@ -39,7 +39,7 @@ programa
 
 			se(opcao == 2){
 				para (inteiro i = 0; i< qtdCadastrada; i++){
-					escreva(i+": ",nomes[i], " | CPF: "+cpf[i]," | Nascido em: "+dataNasc[i] +"|\n\n")
+					escreva(i+": ",nomes[i], " | CPF: "+cpf[i]," | Nascido em: "+dataNasc[i] +" |\n\n")
 				}
 			}
 
@@ -69,7 +69,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1073; 
+ * @POSICAO-CURSOR = 205; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
