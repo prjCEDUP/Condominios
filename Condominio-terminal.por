@@ -5,7 +5,7 @@ programa
 	
 	funcao inicio(){
 		cadeia nomes[99999], cpf[99999], dataNasc[99999], nome
-		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0
+		inteiro qtdCadastrada = 1, pesquisa = 0, opcao = 0
 
 		enquanto (opcao != 5){
 			escreva("------------- Programa do CEDUP -------------")
@@ -21,7 +21,7 @@ programa
 			limpa()
 
 			se (opcao == 1){
-				escreva("Digite o nome do morador " + (qtdCadastrada+1) + ": ")
+				escreva("Digite o nome do morador " + (qtdCadastrada) + ": ")
 				leia(nomes[qtdCadastrada])
 				
 				escreva("Digite o CPF: ")
@@ -38,7 +38,7 @@ programa
 			}
 
 			se(opcao == 2){
-				para (inteiro i = 0; i< qtdCadastrada; i++){
+				para (inteiro i = 1; i< qtdCadastrada; i++){
 					escreva(i+": ",nomes[i],
 							" | CPF: "+cpf[i],
 						     " | Nascido em: "+dataNasc[i] +" |\n\n")
@@ -57,7 +57,7 @@ programa
 				leia(nome)
 				limpa()
 				
-				para (inteiro i = 0; i<qtdCadastrada; i++){
+				para (inteiro i = 1; i<qtdCadastrada; i++){
 					se (nomes[i] == nome){
 					escreva("Codigo do morador "+nome," é: "+i+"\n\n")
 					}
@@ -71,9 +71,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1211; 
+ * @POSICAO-CURSOR = 189; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {nomes, 7, 9, 5}-{cpf, 7, 23, 3}-{dataNasc, 7, 35, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
