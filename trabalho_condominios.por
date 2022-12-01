@@ -47,6 +47,7 @@ programa
 				para (inteiro i = 0; i< qtdCadastrada; i++){
 					escreva((i+1)+": ",nomes[i]+"\n")
 				}
+				escreva("\n")
 			}
 
 			se(opcao == 3){
@@ -55,8 +56,7 @@ programa
 				nencontrado=0
 				se(pesquisa <=qtdCadastrada e pesquisa>0){
 					escreva("Codigo do morador "+nomes[pesquisa-1]," é: "+pesquisa+"\n")
-					escreva(" | CPF: "+cpf[pesquisa-1],
-						     " | Nascido em: "+dataNasc[pesquisa-1] +" |\n\n")
+					escreva("| CPF: "+cpf[pesquisa-1]," | Nascido em: "+dataNasc[pesquisa-1] +" |\n\n")
 					nencontrado=+1
 				}
 				se(nencontrado!=1){
@@ -72,8 +72,7 @@ programa
 				para (inteiro i = 0; i< qtdCadastrada; i++){
 					se (nomes[i] == nome){
 						escreva("Codigo do morador "+nome," é: "+(i+1)+"\n")
-						escreva(" | CPF: "+cpf[i],
-						     " | Nascido em: "+dataNasc[i] +" |\n\n")
+						escreva("| CPF: "+cpf[i]," | Nascido em: "+dataNasc[i] +" |\n\n")
 						nencontrado=+1
 					}
 				}
@@ -84,14 +83,12 @@ programa
 		}
 	}
 }
-	
-			
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 787; 
+ * @POSICAO-CURSOR = 1964; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
