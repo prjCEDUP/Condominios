@@ -5,16 +5,16 @@ programa
 	
 	funcao inicio(){
 		cadeia nomes[99999], cpf[99999], dataNasc[99999], nome
-		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, nencontrado=0
+		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, nEncontrado=0
 
 		enquanto (opcao != 5){
 			escreva("------------- Programa do CEDUP -------------")
 			escreva("\n----------------- 2022 INFO -----------------")
-			escreva("\n1 - Cadastrar morador.")
-			escreva("\n2 - Listar todos moradores.")
-			escreva("\n3 - Buscar um morador por codigo(índice).")
-			escreva("\n4 - Buscar um morador por nome.")
-			escreva("\n\n5 - Sair")
+			escreva("\n(1) - Cadastrar morador.")
+			escreva("\n(2) - Listar todos moradores.")
+			escreva("\n(3) - Buscar um morador por codigo(índice).")
+			escreva("\n(4) - Buscar um morador por nome.")
+			escreva("\n\n(5) - Sair")
 			escreva("\n---------------------------------------------")
 			escreva("\nDigite uma opção: ")
 			leia(opcao)
@@ -53,13 +53,13 @@ programa
 			se(opcao == 3){
 				escreva("Digite o codigo do morador: ")
 				leia(pesquisa)
-				nencontrado=0
+				nEncontrado=0
 				se(pesquisa <=qtdCadastrada e pesquisa>0){
-					escreva("Codigo do morador "+nomes[pesquisa-1]," é: "+pesquisa+"\n")
+					escreva("O Codigo "+pesquisa," é do morador: "+nomes[pesquisa-1]+"\n")
 					escreva("| CPF: "+cpf[pesquisa-1]," | Nascido em: "+dataNasc[pesquisa-1] +" |\n\n")
-					nencontrado=+1
+					nEncontrado=+1
 				}
-				se(nencontrado!=1){
+				se(nEncontrado!=1){
 					escreva("Morador não cadastrado\n\n")
 				}
 			}
@@ -68,15 +68,15 @@ programa
 				escreva("Digite um nome: ")
 				leia(nome)
 				limpa()
-				nencontrado=0
+				nEncontrado=0
 				para (inteiro i = 0; i< qtdCadastrada; i++){
 					se (nomes[i] == nome){
-						escreva("Codigo do morador "+nome," é: "+(i+1)+"\n")
+						escreva("O morador "+ nome," tem o codigo: "+(i+1)+"\n")
 						escreva("| CPF: "+cpf[i]," | Nascido em: "+dataNasc[i] +" |\n\n")
-						nencontrado=+1
+						nEncontrado=+1
 					}
 				}
-				se(nencontrado!=1){
+				se(nEncontrado!=1){
 					escreva("Morador não cadastrado\n\n")
 				}
 			}
@@ -88,7 +88,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1964; 
+ * @POSICAO-CURSOR = 583; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
