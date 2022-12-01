@@ -56,8 +56,8 @@ programa
 				leia(pesquisa)
 				nEncontrado=0
 				se(pesquisa <=qtdCadastrada e pesquisa>0){
-					escreva("O Codigo "+pesquisa," é do morador: "+nomes[pesquisa-1]+"\n")
-					escreva("| CPF: "+cpf[pesquisa-1]," | Nascido em: "+dataNasc[pesquisa-1] +" |\n\n")
+					escreva("Codigo "+pesquisa,"\nMorador: "+nomes[pesquisa-1])
+					escreva("\nCPF: "+cpf[pesquisa-1],"\nData de Nascimento: "+dataNasc[pesquisa-1] +" |\n\n")
 					nEncontrado=+1
 				}
 				se(nEncontrado!=1){
@@ -73,8 +73,8 @@ programa
 				nEncontrado=0
 				para (inteiro i = 0; i< qtdCadastrada; i++){
 					se (nomes[i] == nome){
-						escreva("O morador "+ nome," tem o codigo: "+(i+1)+"\n")
-						escreva("| CPF: "+cpf[i]," | Nascido em: "+dataNasc[i] +" |\n\n")
+						escreva("Morador "+ nome,"\nCodigo: "+(i+1)+"\n")
+						escreva("CPF: "+cpf[i],"\nData de Nascimento: "+dataNasc[i] +"\n\n")
 						nEncontrado=+1
 					}
 				}
@@ -90,7 +90,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 984; 
+ * @POSICAO-CURSOR = 1575; 
+ * @DOBRAMENTO-CODIGO = [46, 80];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
