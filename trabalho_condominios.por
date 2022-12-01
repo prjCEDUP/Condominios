@@ -4,8 +4,9 @@ programa
 	inclua biblioteca Util --> u
 	
 	funcao inicio(){
-		cadeia nomes[99999], cpf[99999], dataNasc[99999], nome
+		cadeia nomes[99999], dataNasc[99999], nome
 		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, nEncontrado=0
+		inteiro cpf[99999]
 
 		enquanto (opcao != 5){
 			escreva("------------- Programa do CEDUP -------------")
@@ -60,8 +61,9 @@ programa
 					nEncontrado=+1
 				}
 				se(nEncontrado!=1){
-					escreva("Morador não cadastrado\n\n")
+					escreva("Morador não cadastrado.\n\n")
 				}
+				
 			}
 
 			se(opcao == 4){
@@ -77,7 +79,7 @@ programa
 					}
 				}
 				se(nEncontrado!=1){
-					escreva("Morador não cadastrado\n\n")
+					escreva("Morador não cadastrado.\n\n")
 				}
 			}
 		}
@@ -88,7 +90,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 583; 
+ * @POSICAO-CURSOR = 984; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
