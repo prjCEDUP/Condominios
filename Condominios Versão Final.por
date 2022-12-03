@@ -1,6 +1,5 @@
 programa
 {
-	//inclua biblioteca Teclado --> t
 	inclua biblioteca Util --> u
 	
 	funcao inicio(){
@@ -8,6 +7,7 @@ programa
 		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, nEncontrado=0
 		inteiro cpf[99999]
 
+		//Menu de opções:
 		enquanto (opcao != 5){
 			escreva("------------- Programa do CEDUP -------------")
 			escreva("\n----------------- 2022 INFO -----------------")
@@ -21,12 +21,14 @@ programa
 			leia(opcao)
 			limpa()
 
+			//Se opção for >5 ou <1, volta para o menu.
 			se(opcao>5 ou opcao<1){
 				escreva("Opção inválida!\n\n")
 				u.aguarde(1000)
 				limpa()
 			}
 
+			//Cadastra morador.
 			se (opcao == 1){
 				escreva("Digite o nome do morador: ")
 				leia(nomes[qtdCadastrada])
@@ -44,6 +46,7 @@ programa
 				qtdCadastrada++
 			}
 
+			//Listar todos moradores.
 			se(opcao == 2){
 				para (inteiro i = 0; i< qtdCadastrada; i++){
 					escreva((i+1)+": ",nomes[i]+"\n")
@@ -51,6 +54,7 @@ programa
 				escreva("\n")
 			}
 
+			//Buscar um morador por codigo(índice) e valida se codigo informado está cadastrado ou não.
 			se(opcao == 3){
 				escreva("Digite o codigo do morador: ")
 				leia(pesquisa)
@@ -60,12 +64,14 @@ programa
 					escreva("\nCPF: "+cpf[pesquisa-1],"\nData de Nascimento: "+dataNasc[pesquisa-1] +" |\n\n")
 					nEncontrado=+1
 				}
+				//
 				se(nEncontrado!=1){
 					escreva("Morador não cadastrado.\n\n")
 				}
 				
 			}
 
+			//Buscar um morador por nome e valida se nome informado está cadastrado ou não.
 			se(opcao == 4){
 				escreva("Digite um nome: ")
 				leia(nome)
@@ -90,8 +96,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2101; 
- * @DOBRAMENTO-CODIGO = [29, 46, 53];
+ * @POSICAO-CURSOR = 815; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
