@@ -54,7 +54,7 @@ programa
 				escreva("\n")
 			}
 
-			//Buscar um morador por codigo(índice) e valida se codigo informado está cadastrado ou não.
+			//Busca um morador por codigo(índice) e valida se codigo informado está cadastrado ou não.
 			se(opcao == 3){
 				escreva("Digite o codigo do morador: ")
 				leia(pesquisa)
@@ -71,7 +71,7 @@ programa
 				
 			}
 
-			//Buscar um morador por nome e valida se nome informado está cadastrado ou não.
+			//Busca um morador por nome e valida se nome informado está cadastrado ou não.
 			se(opcao == 4){
 				escreva("Digite um nome: ")
 				leia(nome)
@@ -96,7 +96,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 815; 
+ * @POSICAO-CURSOR = 1935; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
