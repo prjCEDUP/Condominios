@@ -1,5 +1,6 @@
 programa
 {
+	inclua biblioteca Calendario --> c
 	inclua biblioteca Util --> u
 	
 	funcao inicio(){
@@ -20,14 +21,13 @@ programa
 			limpa()
 				se (user != "Diretor" e senha != "1234" ){
 					limpa()
-					escreva("Tente novamente.\n")
-					u.aguarde(1000)
+					escreva("Usuario ou senha incoretos, tente novamente.\n")
+					u.aguarde(1500)
 					limpa()
 				}
 					
 		}escreva("Bem vindo "+ user+"!\n\n")
 		 u.aguarde(800)
-		
 	}
 
 	funcao diretor(){
@@ -216,19 +216,13 @@ programa
 			}
 		}
 	}
-
-	funcao financeiro (){
-
-		escreva("Ola Mundo")
-	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3795; 
- * @DOBRAMENTO-CODIGO = [10];
+ * @POSICAO-CURSOR = 482; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
