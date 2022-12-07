@@ -1,15 +1,36 @@
 programa
 {
-	
-	
 	inclua biblioteca Util --> u
 	
 	funcao inicio(){
+
+		  login()
+		  diretor()
+		  financeiro()	
+	}
+
+	funcao login(){
+
+		caracter senha, user
+
+		escreva("Informe seu usuario: ")
+		leia(user)
+
+		escreva("Informe sua senha: ")
+		leia(senha)
+
+		escolha (user){
+
+			caso financeiro : retorne financeiro
+		}
+	}
+
+	funcao diretor(){
 		cadeia nomes[99999], dataNasc[99999], nome,nomef,nomesf[99999],cargo[99999]
 		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, nEncontrado=0, opcao1=0,qtdCadastradaf=0,opcaof=0,pesquisaf=0
 		inteiro cpf[99999],dataNascf[99999],cpff[99999]
-	
-	enquanto (opcao1 != 3){
+		
+		enquanto (opcao1 != 3){
 			opcao=0
 			opcaof=0
 			
@@ -188,7 +209,12 @@ programa
 					}	
 				}	
 			}
-		}		
+		}
+	}
+
+	funcao financeiro (){
+
+		escreva("Ola Mundo")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -196,7 +222,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 5222; 
+ * @POSICAO-CURSOR = 307; 
+ * @DOBRAMENTO-CODIGO = [32];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
