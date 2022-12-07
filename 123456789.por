@@ -15,8 +15,8 @@ programa
 			
 			escreva("------------- Programa do CEDUP -------------")
 			escreva("\n----------------- 2022 INFO -----------------")
-			escreva("\n(1) - Cadastrar morador.")
-			escreva("\n(2) - Cadastrar funcionarios.")
+			escreva("\n(1) - Moradores.")
+			escreva("\n(2) - Funcionarios.")
 			escreva("\n(3) - Sair")
 			escreva("\n---------------------------------------------")
 			escreva("\nDigite uma opção: ")
@@ -30,87 +30,86 @@ programa
 			}
 			se(opcao1==1){
 			
-			enquanto (opcao != 5){
+				enquanto (opcao != 5){
 				
-				escreva("------------- Programa do CEDUP -------------")
-				escreva("\n----------------- 2022 INFO -----------------")
-				escreva("\n(1) - Cadastrar morador.")
-				escreva("\n(2) - Listar todos moradores.")
-				escreva("\n(3) - Buscar um morador por codigo(índice).")
-				escreva("\n(4) - Buscar um morador por nome.")
-				escreva("\n\n(5) - Sair")
-				escreva("\n---------------------------------------------")
-				escreva("\nDigite uma opção: ")
-				leia(opcao)
-				limpa()
-
-				se(opcao>5 ou opcao<1){
-					escreva("Opção inválida!\n\n")
-					u.aguarde(1000)
+					escreva("------------- Programa do CEDUP -------------")
+					escreva("\n----------------- 2022 INFO -----------------")
+					escreva("\n(1) - Cadastrar morador.")
+					escreva("\n(2) - Listar todos moradores.")
+					escreva("\n(3) - Buscar um morador por codigo(índice).")
+					escreva("\n(4) - Buscar um morador por nome.")
+					escreva("\n\n(5) - Sair")
+					escreva("\n---------------------------------------------")
+					escreva("\nDigite uma opção: ")
+					leia(opcao)
 					limpa()
-				}
 
-				se (opcao == 1){
-					escreva("Digite o nome do morador: ")
-					leia(nomes[qtdCadastrada])
-				
-					escreva("Digite o CPF: ")
-					leia(cpf[qtdCadastrada])
-
-					escreva("Digite a data de nascimento: ")
-					leia(dataNasc[qtdCadastrada])
-				
-					escreva("Morador cadastrado com sucesso!\n\n")
-					u.aguarde(1000)
-					limpa()
-				
-					qtdCadastrada++
-				}
-
-				se(opcao == 2){
-					para (inteiro i = 0; i< qtdCadastrada; i++){
-						escreva((i+1)+": ",nomes[i]+"\n")
+					se(opcao>5 ou opcao<1){
+						escreva("Opção inválida!\n\n")
+						u.aguarde(1000)
+						limpa()
 					}
-				escreva("\n")
-				}
 
-				se(opcao == 3){
-					escreva("Digite o codigo do morador: ")
-					leia(pesquisa)
-					nEncontrado=0
-					se(pesquisa <=qtdCadastrada e pesquisa>0){
-						escreva("Codigo "+pesquisa,"\nMorador: "+nomes[pesquisa-1])
-						escreva("\nCPF: "+cpf[pesquisa-1],"\nData de Nascimento: "+dataNasc[pesquisa-1] +"\n\n")
-						nEncontrado=+1
-					}
-					se(nEncontrado!=1){
-					escreva("Morador não cadastrado.\n\n")
-					}
+					se (opcao == 1){
+						escreva("Digite o nome do morador: ")
+						leia(nomes[qtdCadastrada])
 				
-				}
+						escreva("Digite o CPF: ")
+						leia(cpf[qtdCadastrada])
 
-				se(opcao == 4){
-					escreva("Digite um nome: ")
-					leia(nome)
-					limpa()
-					nEncontrado=0
-					para (inteiro i = 0; i< qtdCadastrada; i++){
-						se (nomes[i] == nome){
-							escreva("Morador "+ nome,"\nCodigo: "+(i+1)+"\n")
-							escreva("CPF: "+cpf[i],"\nData de Nascimento: "+dataNasc[i] +"\n\n")
+						escreva("Digite a data de nascimento: ")
+						leia(dataNasc[qtdCadastrada])
+				
+						escreva("Morador cadastrado com sucesso!\n\n")
+						u.aguarde(1000)
+						limpa()
+				
+						qtdCadastrada++
+					}
+
+					se(opcao == 2){
+						para (inteiro i = 0; i< qtdCadastrada; i++){
+							escreva((i+1)+": ",nomes[i]+"\n")
+						}
+					escreva("\n")
+					}
+
+					se(opcao == 3){
+						escreva("Digite o codigo do morador: ")
+						leia(pesquisa)
+						nEncontrado=0
+						se(pesquisa <=qtdCadastrada e pesquisa>0){
+							escreva("Codigo "+pesquisa,"\nMorador: "+nomes[pesquisa-1])
+							escreva("\nCPF: "+cpf[pesquisa-1],"\nData de Nascimento: "+dataNasc[pesquisa-1] +"\n\n")
 							nEncontrado=+1
 						}
-					}
-					se(nEncontrado!=1){
+						se(nEncontrado!=1){
 						escreva("Morador não cadastrado.\n\n")
+						}
+				
 					}
-				}	
-			}
-		}	
+
+					se(opcao == 4){
+						escreva("Digite um nome: ")
+						leia(nome)
+						limpa()
+						nEncontrado=0
+							para (inteiro i = 0; i< qtdCadastrada; i++){
+								se (nomes[i] == nome){
+									escreva("Morador "+ nome,"\nCodigo: "+(i+1)+"\n")
+									escreva("CPF: "+cpf[i],"\nData de Nascimento: "+dataNasc[i] +"\n\n")
+									nEncontrado=+1
+								}
+							}
+						se(nEncontrado!=1){
+						escreva("Morador não cadastrado.\n\n")
+						}
+					}	
+				}
+			}	
 			
 			se(opcao1==2){
 				enquanto (opcaof!= 5){
-				
 					escreva("------------- Programa do CEDUP -------------")
 					escreva("\n----------------- 2022 INFO -----------------")
 					escreva("\n(1) - Cadastrar funcionario.")
@@ -156,7 +155,7 @@ programa
 						}
 						escreva("\n")
 					}
-
+					
 					se(opcaof == 3){
 						escreva("Digite o codigo do Funcionario: ")
 						leia(pesquisaf)
@@ -166,10 +165,9 @@ programa
 							escreva("\nCPF: "+cpff[pesquisaf-1],"\nData de Nascimento: "+dataNascf[pesquisaf-1]+"\ncargo:"+cargo[pesquisaf-1] +"\n\n")
 							nEncontrado=+1
 						}
-					se(nEncontrado!=1){
+						se(nEncontrado!=1){
 						escreva("Funcionario não cadastrado.\n\n")
-					}
-				
+						}
 					}
 
 					se(opcaof == 4){
@@ -204,7 +202,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 4170; 
+ * @POSICAO-CURSOR = 539; 
+ * @DOBRAMENTO-CODIGO = [30];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {opcao, 9, 43, 5}-{opcao1, 9, 69, 6}-{opcaof, 9, 95, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
