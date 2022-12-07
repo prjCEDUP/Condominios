@@ -12,14 +12,14 @@ programa
 	funcao login(){
 		cadeia senha="", user = ""
 		
-		enquanto (user != "Diretor" e senha != "1234"){
+		enquanto (user != "Diretor" ou senha != "1234"){
 				
 			escreva("Informe seu usuario: ")
 			leia(user)
 			escreva("Informe sua senha: ")
 			leia(senha)
 			limpa()
-				se (user != "Diretor" e senha != "1234" ){
+				se (user != "Diretor" ou senha != "1234" ){
 					limpa()
 					escreva("Usuario ou senha incoretos, tente novamente.\n")
 					u.aguarde(1500)
@@ -97,6 +97,9 @@ programa
 						para (inteiro i = 0; i< qtdCadastrada; i++){
 							escreva((i+1)+": ",nomes[i]+"\n")
 						}
+					se(qtdCadastradaf == 0){
+						escreva("Nenhum morador localizado")
+					}
 					escreva("\n")
 					}
 
@@ -179,6 +182,9 @@ programa
 						para (inteiro i = 0; i< qtdCadastradaf; i++){
 							escreva((i+1)+": ",nomesf[i]+"\n")
 						}
+						se(qtdCadastradaf == 0){
+							escreva("Nenhum funcionario localizado")
+						}
 						escreva("\n")
 					}
 					
@@ -187,8 +193,8 @@ programa
 						leia(pesquisaf)
 						nEncontrado=0
 						se(pesquisaf <=qtdCadastradaf e pesquisaf>0){
-							escreva("Codigo "+pesquisaf,"\nMorador: "+nomesf[pesquisa-1])
-							escreva("\nCPF: "+cpff[pesquisaf-1],"\nData de Nascimento: "+dataNascf[pesquisaf-1]+"\ncargo:"+cargo[pesquisaf-1] +"\n\n")
+							escreva("Codigo "+pesquisaf,"\nMorador: "+nomesf[pesquisaf-1])
+							escreva("\nCPF: "+cpff[pesquisaf-1],"\nData de Nascimento: "+dataNascf[pesquisaf-1]+"\nCargo:"+cargo[pesquisaf-1] +"\n\n")
 							nEncontrado=+1
 						}
 						se(nEncontrado!=1){
@@ -222,7 +228,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 482; 
+ * @POSICAO-CURSOR = 5259; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
