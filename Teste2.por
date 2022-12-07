@@ -6,23 +6,28 @@ programa
 
 		  login()
 		  diretor()
-		  financeiro()	
 	}
 
 	funcao login(){
-
-		caracter senha, user
-
-		escreva("Informe seu usuario: ")
-		leia(user)
-
-		escreva("Informe sua senha: ")
-		leia(senha)
-
-		escolha (user){
-
-			caso financeiro : retorne financeiro
-		}
+		cadeia senha="", user = ""
+		
+		enquanto (user != "Diretor" e senha != "1234"){
+				
+			escreva("Informe seu usuario: ")
+			leia(user)
+			escreva("Informe sua senha: ")
+			leia(senha)
+			limpa()
+				se (user != "Diretor" e senha != "1234" ){
+					limpa()
+					escreva("Tente novamente.\n")
+					u.aguarde(1000)
+					limpa()
+				}
+					
+		}escreva("Bem vindo "+ user+"!\n\n")
+		 u.aguarde(800)
+		
 	}
 
 	funcao diretor(){
@@ -59,7 +64,7 @@ programa
 					escreva("\n(2) - Listar todos moradores.")
 					escreva("\n(3) - Buscar um morador por codigo(índice).")
 					escreva("\n(4) - Buscar um morador por nome.")
-					escreva("\n\n(5) - Sair")
+					escreva("\n\n(5) - Voltar")
 					escreva("\n---------------------------------------------")
 					escreva("\nDigite uma opção: ")
 					leia(opcao)
@@ -137,7 +142,7 @@ programa
 					escreva("\n(2) - Listar todos Funcinarios.")
 					escreva("\n(3) - Buscar um Funcionario por codigo(índice).")
 					escreva("\n(4) - Buscar um Funcinario por nome.")
-					escreva("\n\n(5) - Sair")
+					escreva("\n\n(5) - Voltar")
 					escreva("\n---------------------------------------------")
 					escreva("\nDigite uma opção: ")
 					leia(opcaof)
@@ -222,8 +227,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 307; 
- * @DOBRAMENTO-CODIGO = [32];
+ * @POSICAO-CURSOR = 3795; 
+ * @DOBRAMENTO-CODIGO = [10];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
