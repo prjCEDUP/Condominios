@@ -11,14 +11,14 @@ programa
 	funcao login(){
 		cadeia senha="", user = ""
 		
-		enquanto (user != "Diretor" ou senha != "1234"){
+		enquanto (user != "Diretor" ou senha != "*****"){
 				
 			escreva("Informe seu usuario: ")
 			leia(user)
 			escreva("Informe sua senha: ")
 			leia(senha)
 			limpa()
-				se (user != "Diretor" ou senha != "1234" ){
+				se (user != "Diretor" ou senha != "*****" ){
 					limpa()
 					escreva("Usuario ou senha incoretos, tente novamente.\n")
 					u.aguarde(1500)
@@ -32,7 +32,7 @@ programa
 	funcao diretor(){
 		cadeia nomes[99999], dataNasc[99999], nome,nomef,nomesf[99999],cargo[99999]
 		inteiro qtdCadastrada = 0, pesquisa = 0, opcao = 0, nEncontrado=0, opcao1=0,qtdCadastradaf=0,opcaof=0,pesquisaf=0
-		inteiro cpf[99999],dataNascf[99999],cpff[99999]
+		cadeia cpf[99999],dataNascf[99999],cpff[99999]
 		
 		enquanto (opcao1 != 3){
 			opcao=0
@@ -227,7 +227,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 10; 
+ * @POSICAO-CURSOR = 761; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
