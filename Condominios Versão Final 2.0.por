@@ -38,7 +38,7 @@ programa
 			opcao=0
 			opcaoF=0
 			
-			escreva("------------- Programa do CEDUP -------------")
+			escreva("------------- Condomínios/CEDUP -------------")
 			escreva("\n----------------- 2022 INFO -----------------")
 			escreva("\n(1) - Moradores.")
 			escreva("\n(2) - Funcionários.")
@@ -227,7 +227,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 644; 
+ * @POSICAO-CURSOR = 905; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
